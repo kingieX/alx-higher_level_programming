@@ -8,7 +8,7 @@ else:
 print("Last digit of {} is {} and is ".format(number, last), end="")
 if last < 6:
     print("less than 6 and not 0")
-elif last > 5:
-    print("greater than 5")
-else:
+elif last == 0:
     print("0")
+else:
+    print("greater than 5")
