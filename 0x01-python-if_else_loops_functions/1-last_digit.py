@@ -10,5 +10,5 @@ if last < 6:
     print("less than 6 and not 0")
 elif last > 5:
     print("greater than 5")
-elif last == 0:
+else:
     print("0")
