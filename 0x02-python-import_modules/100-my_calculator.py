@@ -6,7 +6,7 @@ if __name__ == "__main__":
         quit(1)
     a = int(argv[1])
     b = int(argv[3])
-    ops = ["=", "-", "*", "/"]
+    ops = ["+", "-", "*", "/"]
     from calculator_1 import add, sub, mul, div
     functions = [add, sub, mul, div]
     for i, s in enumerate(ops):
