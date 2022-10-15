@@ -1,0 +1,57 @@
+# The ''0-add_integer'' module
+
+=========================
+
+This module defines an integer addition function called ''add_integer(a, b=98)''.
+=========================
+
+Importing the function from the module:
+	>>> m = __import__("0-add_integer").__doc__
+	>>> len(m) > 1
+	True
+
+check for docstring:
+	>>> f = __import__("0-add_integer").add_integer.__doc__
+	>>> len(f) > 1
+	True
+
+check for addition:
+	>>> add_integer(4, 3)
+	7
+
+check positive with negative:
+	>>> add_integer(4, -3)
+	1
+
+check negative with positive:
+	>>> add_integer(-7, 5)
+	-2
+
+check addition over multiple values:
+	>>> [add_integer(i, i ** 2) for i in range(6)]
+	 [0, 2, 6, 12, 20, 30]
+
+check float with integer:
+	>>> add_integer(3.1, 2)
+	5
+
+check flaot with integer:
+	>>> add_integer(11.4, 2)
+	13
+
+check float with another float:
+	>>> add_integer(2.4, 3.2)
+	5
+
+check for passed NaN:
+	>>> add_integer(1, float('nan'))
+	 Traceback (most recent call last):
+	 ...
+	 ValueError: cannot convert float NaN to integer
+
+checking for inf:
+	>>> add_integer(1, float('inf'))
+	 Traceback (most recent call last):
+	 ...
+	 OverflowError: cannot convert float infinity to integer
+
