@@ -3,6 +3,7 @@
 function goes here
 """
 
+
 def lookup(obj):
-    """returns a list of available attributes and methods of obj"""
+    """returns a list of available attributes and methods of an obj"""
     return dir(obj)
