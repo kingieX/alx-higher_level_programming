@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-class BaseGeometry
+Contains the class BaseGeometry
 """
 
 
 class BaseGeometry:
-    """public attribute area"""
+    """A class with public instance methods area and integer_validator"""
     def area(self):
-        """raises an exception with a message"""
+        """raises an exception when called"""
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
