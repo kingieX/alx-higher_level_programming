@@ -2,7 +2,7 @@
 """
 a script that adds all arguments to a python list
 """
-
+import json
 
 from sys import argv
 save_to_json = __import__("5-save_to_json_file").save_to_json_file
