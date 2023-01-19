@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script that takes in a URL, sends request to the URL ans=d disp;lay the value
+"""Script that takes in a URL, sends request to the URL.
 Usage: ./1-hbtn_header.py <URL>
 """
 import sys
